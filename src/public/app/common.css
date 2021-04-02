@@ -1,0 +1,30 @@
+.hand{
+    cursor:pointer;
+}
+#header{
+    top:0px;
+    position: sticky;
+    z-index: 2;
+   
+}
+
+#footer{
+    bottom: 0px;
+    position: sticky;
+    padding-top: 22px;
+    
+}
+#username{
+    color:blue;
+    font-weight: bold;
+}
+#postContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.readMore{
+    color:blue;
+}
+
+

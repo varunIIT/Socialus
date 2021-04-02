@@ -1,0 +1,29 @@
+<div class="container">
+    <h1 class="text-center">Write Post</h1>
+    <hr>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-auto">
+            
+                <form action="/post" method="POST">
+                  <div class="mb-3">
+                    <label for="postTitle" class="form-label">Post Title</label>
+                    <input type="text" class="form-control" id="postTitle" name="title"style="width:454.8px" required>
+                    </div>
+          
+                    <label for="postBody" class="form-label">Post body</label>
+                    <br>
+                  <textarea  id="postBody" cols="60" rows="10" name="body" required></textarea>
+                  <br>
+                 
+                 <div class="text-center">
+                   <div class="my-2" >Your post will be added to Recent Posts!</div>
+                    <button type="submit"  class="btn btn-primary">Post</button>
+                  </div>
+
+                </form>
+              
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
