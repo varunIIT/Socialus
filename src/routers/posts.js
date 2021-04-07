@@ -1,21 +1,12 @@
 const postRoute=require('express').Router()
 const {PostModel, CommentModel}=require('../db/models')
-const {getPostById}=require('../controllers/post')
+const {getPostById, createPost, getAllPost}=require('../controllers/post')
 
 postRoute.get('/',async (req,res)=>{
-    const allPosts=await PostModel.find()
-    res.send(allPosts)
+    getAllPost(req,res)
 })
 postRoute.post('/',async (req,res)=>{
-    //console.log(req.body)
-    // console.log(2)
-    const obj=req.body
-    if(!req.user){
-        return res.redirect('/login')
-    }
-    obj.author=req.user.userName
-    const post=await PostModel.create(obj)
-    res.redirect('/')
+    createPost(req,res)
 })
 postRoute.get('/:id',async (req,res)=>{
     try{
