@@ -5,7 +5,7 @@ Socialus is a social media dynamic website where users can write post, see posts
 2. database->mongodb, ODM-mongoose
 3. backend->nodeJS
 ### Installation requirement 
-npm install bcrypt bcryptjs connect-flash express express-session hbs mongoose passport passport-local
+npm install 
 ### Features
 1. Proper sign up and login with authentication. Also it has validation for unique username and email id. Passwords are hashed before storing in database.
 
