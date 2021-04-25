@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/social-media-db', {
+mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost:27017/social-media-db', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
