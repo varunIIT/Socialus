@@ -1,5 +1,6 @@
 # Socialus
 Socialus is a social media dynamic website where users can write post, see posts, write comments, see comments, delete their posts, etc features with proper login and sign up using passport local strategy and hashing user's password.
+### Active link: <a>https://socialus.herokuapp.com/</a>
 ### Tools/technologies Used
 1. frontend->html, css, javascript, jquery, handlebars, bootstrap.
 2. database->mongodb, ODM-mongoose
